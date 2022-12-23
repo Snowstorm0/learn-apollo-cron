@@ -41,7 +41,7 @@ public class MyService implements SchedulingConfigurer, Ordered {
 
     public String getTme() {
         Long current_time = System.currentTimeMillis();
-        SimpleDateFormat formate = new SimpleDateFormat("yyyyMMddHHmmSS");
+        SimpleDateFormat formate = new SimpleDateFormat("yyyyMMddHHmmss");
         String formateTime = formate.format(current_time);
         String clock = formateTime.substring(8, 10) + ":" + formateTime.substring(10, 12) + ":" + formateTime.substring(12, 14);
         return clock;
